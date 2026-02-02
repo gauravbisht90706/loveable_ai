@@ -1,0 +1,11 @@
+package com.gaurav.project.lovable_ai.dto.subscription;
+
+import java.time.Instant;
+
+public record SubscriptionResponse(
+        PlanResponse planResponse,
+        String status,
+        Instant periodEnd,
+        Long tokenUsedThisCycle
+) {
+}
